@@ -7,6 +7,7 @@ import org.junit.Test;
 import java.util.List;
 
 public class UserServiceTest {
+
     private final UserService userService = new UserServiceImpl();
 
     private final String testName = "Ivan";
@@ -98,5 +99,6 @@ public class UserServiceTest {
             Assert.fail("При тестировании очистки таблицы пользователей произошло исключение\n" + e);
         }
     }
+
 
 }
