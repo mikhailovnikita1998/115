@@ -2,7 +2,7 @@ package jm.task.core.jdbc.service;
 
 import jm.task.core.jdbc.dao.UserDao;
 import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
-import jm.task.core.jdbc.model.User;
+import jm.task.core.jdbc.model.Users2;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -27,9 +27,9 @@ public class UserServiceImpl implements UserService {
         userDao.removeUserById(id);
     }
 
-    public List<User> getAllUsers() throws SQLException {
-        List<User> users =  userDao.getAllUsers();
-        for (User user : users) {
+    public List<Users2> getAllUsers() throws SQLException {
+        List<Users2> users =  userDao.getAllUsers();
+        for (Users2 user : users) {
             System.out.println(user);
         }
         return users;
